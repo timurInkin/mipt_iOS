@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		373586CC276A84220040E468 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373586CB276A84220040E468 /* NotesViewController.swift */; };
 		373586CE276B98B90040E468 /* ComposeNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373586CD276B98B90040E468 /* ComposeNoteViewController.swift */; };
 		373586D0276B99BA0040E468 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373586CF276B99BA0040E468 /* Note.swift */; };
 		373586D2276B9B070040E468 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373586D1276B9B070040E468 /* DataController.swift */; };
@@ -20,6 +19,7 @@
 		37739016273BF581002F9F91 /* mipt_iOS_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37739015273BF581002F9F91 /* mipt_iOS_appTests.swift */; };
 		37739020273BF581002F9F91 /* mipt_iOS_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3773901F273BF581002F9F91 /* mipt_iOS_appUITests.swift */; };
 		37739022273BF581002F9F91 /* mipt_iOS_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37739021273BF581002F9F91 /* mipt_iOS_appUITestsLaunchTests.swift */; };
+		37A19E30276C0BD10039FD8F /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A19E2F276C0BD10039FD8F /* NotesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		373586CB276A84220040E468 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotesViewController.swift; path = ../../secondLesson/secondLesson/NotesViewController.swift; sourceTree = "<group>"; };
 		373586CD276B98B90040E468 /* ComposeNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeNoteViewController.swift; sourceTree = "<group>"; };
 		373586CF276B99BA0040E468 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		373586D1276B9B070040E468 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -57,6 +56,7 @@
 		3773901B273BF581002F9F91 /* mipt_iOS_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mipt_iOS_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3773901F273BF581002F9F91 /* mipt_iOS_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mipt_iOS_appUITests.swift; sourceTree = "<group>"; };
 		37739021273BF581002F9F91 /* mipt_iOS_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mipt_iOS_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		37A19E2F276C0BD10039FD8F /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,6 @@
 			children = (
 				37738FFE273BF57E002F9F91 /* AppDelegate.swift */,
 				37739000273BF57E002F9F91 /* SceneDelegate.swift */,
-				373586CB276A84220040E468 /* NotesViewController.swift */,
 				37739004273BF57E002F9F91 /* Main.storyboard */,
 				37739007273BF581002F9F91 /* Assets.xcassets */,
 				37739009273BF581002F9F91 /* LaunchScreen.storyboard */,
@@ -118,6 +117,7 @@
 				373586CF276B99BA0040E468 /* Note.swift */,
 				373586D1276B9B070040E468 /* DataController.swift */,
 				373586D3276BF38C0040E468 /* TableViewController.swift */,
+				37A19E2F276C0BD10039FD8F /* NotesViewController.swift */,
 			);
 			path = mipt_iOS_app;
 			sourceTree = "<group>";
@@ -273,10 +273,10 @@
 				373586D0276B99BA0040E468 /* Note.swift in Sources */,
 				373586D4276BF38C0040E468 /* TableViewController.swift in Sources */,
 				373586D2276B9B070040E468 /* DataController.swift in Sources */,
+				37A19E30276C0BD10039FD8F /* NotesViewController.swift in Sources */,
 				37738FFF273BF57E002F9F91 /* AppDelegate.swift in Sources */,
 				373586CE276B98B90040E468 /* ComposeNoteViewController.swift in Sources */,
 				37739001273BF57E002F9F91 /* SceneDelegate.swift in Sources */,
-				373586CC276A84220040E468 /* NotesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
