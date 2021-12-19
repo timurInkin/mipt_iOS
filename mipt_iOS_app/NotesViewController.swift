@@ -29,9 +29,9 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
 
 //
-//    @IBAction func composeButtonTapped(_ sender: Any) {
-//        addNote()
-//    }
+    @IBAction func composeButtonTapped(_ sender: Any) {
+        performSegue(withIdentifier: "EditNoteSogue", sender: nil)
+    }
     
     func deleteNoteAt(index: Int) {
         notes.remove(at: index)
@@ -56,12 +56,17 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
              return notesCount
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {	
         let cell = tableView.dequeueReusableCell(withIdentifier: "NoteCell")! as UITableViewCell
         let note = notes[indexPath.row]
         cell.textLabel?.text = note.text
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "EditNoteSogue", sender: indexPath.row)
+
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -87,9 +92,21 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
         if let notes = dataSource {
             self.notes = notes
             notesTable.reloadData()
-        }
+     
+   }
         
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let composeVC = segue.destination as? ComposeNoteViewController {
+            composeVC.dataController = dataController
+            if segue.identifier == "EditNoteSegue" {
+                if let index = sender as? Int {
+                    composeVC.note = notes[index]
+                
+            }
+        }
+    }
+}
 }
 
         

@@ -20,6 +20,9 @@
 		37739020273BF581002F9F91 /* mipt_iOS_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3773901F273BF581002F9F91 /* mipt_iOS_appUITests.swift */; };
 		37739022273BF581002F9F91 /* mipt_iOS_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37739021273BF581002F9F91 /* mipt_iOS_appUITestsLaunchTests.swift */; };
 		37A19E30276C0BD10039FD8F /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A19E2F276C0BD10039FD8F /* NotesViewController.swift */; };
+		37A19E43276F7F620039FD8F /* AreaCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A19E42276F7F620039FD8F /* AreaCollectionViewController.swift */; };
+		37A19E47276F88850039FD8F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A19E46276F88850039FD8F /* CollectionViewCell.swift */; };
+		37CD227F276FBBE400A1BB65 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CD227E276FBBE400A1BB65 /* TaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		3773901F273BF581002F9F91 /* mipt_iOS_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mipt_iOS_appUITests.swift; sourceTree = "<group>"; };
 		37739021273BF581002F9F91 /* mipt_iOS_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mipt_iOS_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		37A19E2F276C0BD10039FD8F /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		37A19E42276F7F620039FD8F /* AreaCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaCollectionViewController.swift; sourceTree = "<group>"; };
+		37A19E46276F88850039FD8F /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		37CD227E276FBBE400A1BB65 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,9 @@
 				373586D1276B9B070040E468 /* DataController.swift */,
 				373586D3276BF38C0040E468 /* TableViewController.swift */,
 				37A19E2F276C0BD10039FD8F /* NotesViewController.swift */,
+				37A19E42276F7F620039FD8F /* AreaCollectionViewController.swift */,
+				37A19E46276F88850039FD8F /* CollectionViewCell.swift */,
+				37CD227E276FBBE400A1BB65 /* TaskViewController.swift */,
 			);
 			path = mipt_iOS_app;
 			sourceTree = "<group>";
@@ -270,11 +279,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37A19E47276F88850039FD8F /* CollectionViewCell.swift in Sources */,
 				373586D0276B99BA0040E468 /* Note.swift in Sources */,
 				373586D4276BF38C0040E468 /* TableViewController.swift in Sources */,
 				373586D2276B9B070040E468 /* DataController.swift in Sources */,
 				37A19E30276C0BD10039FD8F /* NotesViewController.swift in Sources */,
 				37738FFF273BF57E002F9F91 /* AppDelegate.swift in Sources */,
+				37A19E43276F7F620039FD8F /* AreaCollectionViewController.swift in Sources */,
+				37CD227F276FBBE400A1BB65 /* TaskViewController.swift in Sources */,
 				373586CE276B98B90040E468 /* ComposeNoteViewController.swift in Sources */,
 				37739001273BF57E002F9F91 /* SceneDelegate.swift in Sources */,
 			);

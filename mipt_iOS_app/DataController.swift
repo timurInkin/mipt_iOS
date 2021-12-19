@@ -23,11 +23,16 @@ class DataController {
     func getNotes() {
         self.delegate?.dataSourceChanged(dataSource: self.notes, error: nil)
     }
+    
+    init() {
+        notes = []
+    }
     func modify(note:Note, task:NoteModificationTask) {
         if var notes = self.notes {
             switch task {
             case .create:
                 notes.append(note)
+                delegate?.dataSourceChanged(dataSource: notes, error: nil)
                 break
             case .edit:
                 if let index = notes.index(where: {$0 == note}) {

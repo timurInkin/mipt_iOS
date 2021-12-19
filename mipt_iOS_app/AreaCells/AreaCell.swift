@@ -1,16 +1,15 @@
 //
-//  Note.swift
+//  AreaCollectionViewCell.swift
 //  mipt_iOS_app
 //
-//  Created by ms30 on 16.12.21.
+//  Created by ms30 on 18.12.21.
 //
 
 import Foundation
 import UIKit
 
 
-
-public struct Note {
+public struct AreaCell {
     public let text:String
     public let identifier:String
     
@@ -19,8 +18,8 @@ public struct Note {
         self.identifier = identifier
     }
     
-    static func == (left:Note, right:Note) -> Bool {
+    static func == (left:Area, right:Area) -> Bool {
         return left.identifier == right.identifier
     }
-
-}
+    
+    }
