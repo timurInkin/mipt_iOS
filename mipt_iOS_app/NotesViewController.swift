@@ -30,7 +30,7 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
 
 //
     @IBAction func composeButtonTapped(_ sender: Any) {
-        performSegue(withIdentifier: "EditNoteSogue", sender: nil)
+        performSegue(withIdentifier: "EditNoteSegue", sender: nil)
     }
     
     func deleteNoteAt(index: Int) {
